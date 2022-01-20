@@ -20,30 +20,67 @@ public class Mastermind{
 		for(int i = 0; i<10; i++)
 		{
 			board.add(new ArrayList<Character>());
-			for(int x = 0; x < 9; x++){
-				if(x==4)
+			
+			for(int x = 0; x < 7; x++){
+				if(i%2 == 0)
 				{
-					board.get(i).add(' ');
-				}
-				else if (x<4)
-				{
-					board.get(i).add('?');
+					if(x==4)
+					{
+						board.get(i).add(' ');
+					}
+					else if (x<4)
+					{
+						board.get(i).add('?');
+					}
+					else if (x>4)
+					{
+						board.get(i).add('-');
+					}
+					
 				}
 				else
 				{
-					board.get(i).add('-');
+					if(x==4)
+					{
+						board.get(i).add(' ');
+					}
+					else if (x<4)
+					{
+						board.get(i).add(' ');
+					}
+					else if (x>4)
+					{
+						board.get(i).add('-');
+					}
 				}
+									
+					
+				
+				
 			}
 		}
-		
+		//System.out.println("NOTE: The position of the score pins does not correlate in any way to the position of the board pins");
 		System.out.print("BOARD");
 		System.out.println("		SCORE");
-		
+		int counter = 0;
 		for(int i = 0; i<board.size(); i++)
 		{
+			if(counter ==2){
+				System.out.print("-------------------");
+				counter = -1;
+				i--;
+			}
 			System.out.println(board.get(i));
+			counter++;
 		}
 	}
+	
+	//public void guess(){
+		
+		
+		
+	//}
+		
 			
 		
 		
