@@ -12,12 +12,12 @@ public class Mastermind{
 		
 		
 		
-		public void printBoard(){
+		public void printBoard(){ //prints out the board 
 		ArrayList<ArrayList<Character>> board = new ArrayList<ArrayList<Character>>();
 		
 		
 		
-		for(int i = 0; i<10; i++)
+		for(int i = 0; i<20; i++)
 		{
 			board.add(new ArrayList<Character>());
 			
@@ -38,6 +38,7 @@ public class Mastermind{
 					}
 					
 				}
+				
 				else
 				{
 					if(x==4)
@@ -63,23 +64,73 @@ public class Mastermind{
 		System.out.print("BOARD");
 		System.out.println("		SCORE");
 		int counter = 0;
+		System.out.println("---------------------");
 		for(int i = 0; i<board.size(); i++)
 		{
 			if(counter ==2){
-				System.out.print("-------------------");
+				System.out.println("---------------------");
 				counter = -1;
 				i--;
 			}
-			System.out.println(board.get(i));
-			counter++;
+			else
+			{
+				System.out.println(board.get(i));
+				
+			}
+				counter++;
+			
 		}
 	}
 	
-	//public void guess(){
+	/*
+	public void guess(){
+		System.out.print("\033[H\033[2J");
+		System.out.flush();
+		System.out.println("");
+		System.out.println("Guess:  ");
 		
 		
 		
-	//}
+		
+	}
+	*/
+	
+	public void board(){ //populating random computer generated secret code
+		ArrayList<Character> pins = new ArrayList<Character>();
+		ArrayList<Character> selected = new ArrayList<Character>();
+		pins.add('R');
+		pins.add('Y');
+		pins.add('O');
+		pins.add('G');
+		pins.add('B');
+		pins.add('P');  //x
+		pins.add('W');
+		
+		
+		int randomm = (int)(Math.random()*pins.size()-1); 	//creates random 
+		int temp = (int)(Math.random()*1000); 				
+		
+		for(int j = 0; j<4; j++)
+		{
+			
+			selected.add(pins.get(randomm)); //add the random from pins to new selecrted array list
+			pins.remove(randomm); //removes the random from the pins list so no repeats
+			//System.out.println(j);
+		}
+		//System.out.print(selected);
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+	}
+	
+		
 		
 			
 		
@@ -95,4 +146,5 @@ public class Mastermind{
 	
 	
 }
-//}
+
+
