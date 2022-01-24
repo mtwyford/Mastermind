@@ -1,0 +1,4 @@
+Jan 24...
+Today I worked on getting 4 randomly generated pins that the player has to guess.
+It works most of the time but it sometimes gives me an out of bounds error and I dont really know why
+
