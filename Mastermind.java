@@ -10,10 +10,10 @@ import java.util.Scanner;
 public class Mastermind{
 	//public static void main (String[] args){
 		
-		
+		ArrayList<ArrayList<Character>> board = new ArrayList<ArrayList<Character>>();
 		
 		public void printBoard(){ //prints out the board 
-		ArrayList<ArrayList<Character>> board = new ArrayList<ArrayList<Character>>();
+		
 		
 		
 		
@@ -117,11 +117,29 @@ public class Mastermind{
 			pins.remove(randomm); //removes the random from the pins list so no repeats
 			//System.out.println(j);
 		}
-		//System.out.print(selected);
+		System.out.print(selected);
+		
+			
 		
 		
+	}
+	
+	public void playerGuess(){
+		//ArrayList<Character> guess = new ArrayList<Character>();
+		System.out.println("Type your guess of four letters: R,O,W,Y,G,P,B in all caps");
+		Scanner scan = new Scanner (System.in);
+		String guess = scan.nextLine();
 		
-		
+		//for(int i = 0; i < 20; i++)
+		//{
+			board.get(0).set(0, guess.charAt(0));
+			board.get(0).set(1, guess.charAt(1));
+			board.get(0).set(2, guess.charAt(2));
+			board.get(0).set(3, guess.charAt(3));
+			
+			//i = i + 2;
+		//}
+			
 		
 		
 		
@@ -129,11 +147,6 @@ public class Mastermind{
 		
 		
 	}
-	
-		
-		
-			
-		
 		
 		
 	
@@ -146,5 +159,6 @@ public class Mastermind{
 	
 	
 }
+
 
 
