@@ -24,10 +24,11 @@ Mastermind.  (Main.java class if using Repl.it but ok)
 ** int - translate btwn colors
 ** chars - individual letter
 
-|  | PROS| CONS |
-|Ints|-simple to code | -translate back and forth |
+| PROS| CONS |
+| -----|-----|
+| Ints|-simple to code | -translate back and forth |
 |   |		     |-might be confusing to player|
-|chars| -less confusion for player | -a bit more code to learn |	 
+| chars| -less confusion for player | -a bit more code to learn |	 
 
 * Arrays - 1-2D array for player guesses
 	** 1-1D array for the secret code
