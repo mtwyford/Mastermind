@@ -21,6 +21,11 @@ Mastermind.  (Main.java class if using Repl.it but ok)
 ** Pins - Encoding colors - do we use ints or chars?
 ** [R, G, Y, O]   [R, B, Y, G]  [2][1]
 ** [R, G, Y, O]   [R, O, Y, G]  [2][2]   
+** 
+** Option 2 Layous
+** [R, G, Y, O]   [BP , WP ]
+** [ ,  ,  ,  ]    [2,   2]   
+
 ** int - translate btwn colors
 ** chars - individual letter
 
