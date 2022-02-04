@@ -6,28 +6,28 @@ From Wikipedia: Mastermind or Master Mind is a code-breaking game for two player
 # Scoring Black, White
 
 Mastermind.  (Main.java class if using Repl.it but ok)
-* Make a game class
-** gives rules at beginning (could be a method call printRules() )
-** Scanner class - input user prompts, etc
-*** would make calls to methods to guess position
-*** return for this? int[#cPcL][#cPwL]
-** Instructions - capture instructions (for text file and UI)\
-** ?PvP = play1 choses secret code (swap places at keyboard)
-*** play2 - takes turn guessing
-** ?PvC	= play1 - computer randomizes colors and location of pins				
-*** play2 - takes turn guessing
+# Make a game class
+## gives rules at beginning (could be a method call printRules() )
+## Scanner class - input user prompts, etc
+### would make calls to methods to guess position
+### return for this? int[#cPcL][#cPwL]
+## Instructions - capture instructions (for text file and UI)\
+## ?PvP = play1 choses secret code (swap places at keyboard)
+### play2 - takes turn guessing
+## ?PvC	= play1 - computer randomizes colors and location of pins				
+## play2 - takes turn guessing
 		
-* Make a board Class
-** Pins - Encoding colors - do we use ints or chars?
-** [R, G, Y, O]   [R, B, Y, G]  [2][1]
-** [R, G, Y, O]   [R, O, Y, G]  [2][2]   
-** 
-** Option 2 Layous
-** [R, G, Y, O]   [BP , WP ]
-** [ ,  ,  ,  ]    [2,   2]   
+# Make a board Class
+## Pins - Encoding colors - do we use ints or chars?
+## [R, G, Y, O]   [R, B, Y, G]  [2][1]
+## [R, G, Y, O]   [R, O, Y, G]  [2][2]   
+## 
+## Option 2 Layous
+## [R, G, Y, O]   [BP , WP ]
+## [ ,  ,  ,  ]    [2,   2]   
 
-** int - translate btwn colors
-** chars - individual letter
+## int - translate btwn colors
+## chars - individual letter
 
 | PROS| CONS |
 | -----|-----|
